@@ -25,7 +25,7 @@ SECRET_KEY = 'jf)y-@2^6k8##ai5&=9d=!l4igl+7sd^ox=-n#uyrz0d-26jvw'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [u'ikukang.ml']
+ALLOWED_HOSTS = ['127.0.0.1', u'ikukang.ml']
 
 
 # Application definition
@@ -56,6 +56,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': ['ec2-52-78-172-143.ap-northeast-2.compute.amazonaws.com', 'ikukang.ml', '52.78.172.143'],
+#        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
