@@ -1,22 +1,40 @@
-<html>
+<!-- <html>
     <head>
-        <title>Ikukang blog</title>
+        <title>GNU : GNU Is Not Unix</title>
     </head>
     <body>
         <div>
-            <h1><a href="">Ikukang Blog</a></h1>
+            <h1><a href="">GNU : GNU Is Not Unix</a></h1>
         </div>
 
         <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">Kang In Ku</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <p>published: 14.10.2019, 12:14</p>
+            <h2><a href="">What is the Free Software Movement?</a></h2>
+            <p>The free software movement campaigns to win for the users of computing the freedom that comes from free software. </p>
+            <p> Free software puts its users in control of their own computing. Nonfree software puts its users under the power of the software's developer. </p>
+            <p> See the video explanation.</p>
         </div>
 
         <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">Son Hee Jeong</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
+            <p>published: 14.10.2019, 12:14</p>
+            <h2><a href="">GNU 선언문</a></h2>
+            <p>아래에 첨부한 GNU 선언문은 GNU 프로젝트가 시작되었을 당시에 많은 사람들의 참여와 지원을 요청하기 위해 리차드 스톨만이 작성한 것입니다. 처음 몇년 동안은 프로젝트의             </p>
+            <p>발전 상황을 설명하기 위해 부분적인 개정이 이루어 졌지만, 이제는 문서가 널리 알려짐에 따라 많은 사람들이 알고 있는 내용 그대로를 보존하는 편이 낫다고 판단하게 되었습니다.       </p>
+            <p>문서에 대한 보존이 결정된 이후에 우리는 일반적인 오해의 여지가 있는 몇몇 단어들의 문제점을 알게 되었고, 1993년에 주석을 추가하는 것으로 해석상의 난점들을 명확하게 정리했습니다.</p>
+            <p>GNU 소프트웨어에 대한 최신 정보는 GNU 홈페이지와 소프트웨어 디렉토리를 통해서 참고할 수 있습니다.                                                                         </p>               
         </div>
     </body>
-</html>
+</html> -->
+
+
+<div>
+    <h1><a href="/">Django Girls Blog</a></h1>
+</div>
+
+{% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}
